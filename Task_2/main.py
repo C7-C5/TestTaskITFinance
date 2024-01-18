@@ -1,5 +1,5 @@
 from selenium import webdriver
-from pages.periodic_pable_page import PeriodicTablePage
+from pages.periodic_table_page import PeriodicTablePage
 from urls import MAIN_PAGE_URL
 
 

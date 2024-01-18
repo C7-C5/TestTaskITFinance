@@ -1,7 +1,8 @@
 from selenium.webdriver.common.by import By
 
 class ElementLocators():
-
+    '''Locators for periodic table page
+    '''
     ALL_ELEMENTS_LOCATOR = (By.CSS_SELECTOR, "li[tabindex='0']")
     ATOMIC_NUMBER = (By.TAG_NAME, 'b')
     ELEMENT_NAME = (By.TAG_NAME, 'em')

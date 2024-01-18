@@ -8,6 +8,12 @@ class PeriodicTablePage(BasePage):
     elements_list = ChemicalElements()
 
     def get_chemical_elements(self):
+        """
+        Method that seeks multiple elements (chemical elements into periodic table)
+        and assigns the found elements to the class instance ChemicalElement
+        Also collects ChemicalElement instances into a single list inside the class ChemicalElements
+        :return: list of ChemicalElement instances
+        """
         all_elements = self.find_elements_on_page(self.locators.ALL_ELEMENTS_LOCATOR)
         for element in all_elements:
             element.click()
